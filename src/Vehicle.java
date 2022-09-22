@@ -1,15 +1,24 @@
-public class Vehicle implements OnAVehicle {
+public class Vehicle {
     Driver driver;
     int distance;
     Car car;
-    MilitaryTank Tank;
+    MilitaryTank tank;
 
     public Vehicle() {
 
     }
 
+    public void drive() {
 
-    @Override
+    }
+
+    public void setDriver(Driver driver) {
+
+    }
+
+    //Checks if vehicle subclass has a driver; if it doesn't, prints a negative response depending on the vehicle.
+    //If vehicle does have q driver, removes an amount of distance to go from the respective class.
+    /*@Override
     public void drive() {
         if (this.driver == null) {
             if (getClass().equals(Car.class)) {
@@ -26,9 +35,10 @@ public class Vehicle implements OnAVehicle {
                 System.out.println("Tank drove 5 miles. " + this.distance + " miles to go!");
             }
         }
-    }
+    }*/
 
-    @Override
+    //Checks legal age for each class.
+    /*@Override
     public void setDriver(Driver driver) {
         if (getClass().equals(Car.class)) {
             if (driver.age < 18) {
@@ -48,6 +58,6 @@ public class Vehicle implements OnAVehicle {
             }
         }
 
-    }
+    }*/
 
 }
