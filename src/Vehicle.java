@@ -1,8 +1,7 @@
 public class Vehicle {
     Driver driver;
     int distance;
-    Car car;
-    MilitaryTank tank;
+
 
     public Vehicle() {
 
